@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @font-face {
   font-family: Overpass;
   src: url(https://fonts.google.com/specimen/Overpass?preview.text_type=custom);
@@ -6,5 +13,42 @@
 @font-face {
   font-family: Ubuntu;
   src: url(https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom);
+}
+
+header, nav, footer, .panel {
+  width: 100vw;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav h3 {
+  justify-self: flex-start;
+}
+
+nav h3 a {
+  display: none;
+}
+
+nav h3:hover a {
+  display: block;
+}
+
+nav a {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
