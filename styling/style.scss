@@ -31,41 +31,32 @@
 @import "./nav";
 
 // 5. panel-1
-#panel-1 {
-    background-color: white;
-    position: relative;
-    height: 1018px;
-    overflow: hidden;
+@import "./panel-1";
+// 6. panel-2
+#panel-2 {
+    max-height: min-content;
+    min-height: 30vh;
+    background-image: $body-gradient;
+    color: white;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    h4, h3 {
-        color: $heading-text;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 0px 0px 0px 40px ;
     h3 {
-        padding: 3em;
-        @include font-size(2);
-    }
-    h4 {
-        @include font-size(1);
         padding: 1em;
         padding-left: 0px;
+        @include font-size(2);
     }
     p {
         @include font-size(1);
-        color: $body-copy;
+        width: 90%;
     }
     article {
-        width: 50%;
+        padding-top: 25%;
+        width: 90%;
         padding-left: 10%;
         text-align: start;
     }
-    #illustration-1 {
-        position: absolute;
-        top: 0px;
-        right: -394px;
-    }
 }
-// 6. panel-2
 // 7. panel-3
 // 8. footer
 @import "./footer";

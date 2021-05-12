@@ -1,0 +1,35 @@
+
+#panel-1 {
+    background-color: white;
+    position: relative;
+    height: 1018px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    h4, h3 {
+        color: $heading-text;
+    }
+    h3 {
+        padding: 3em;
+        @include font-size(2);
+    }
+    h4 {
+        @include font-size(1);
+        padding: 1em;
+        padding-left: 0px;
+    }
+    p {
+        @include font-size(1);
+        color: $body-copy;
+    }
+    article {
+        width: 50%;
+        padding-left: 10%;
+        text-align: start;
+    }
+    #illustration-1 {
+        position: absolute;
+        top: 0px;
+        right: -394px;
+    }
+}

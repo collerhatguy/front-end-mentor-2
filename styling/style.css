@@ -170,6 +170,39 @@ a {
   right: -394px;
 }
 
+#panel-2 {
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  min-height: 30vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+  background-image: linear-gradient(#2c2d3f, #3f4164);
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  border-radius: 0px 0px 0px 40px;
+}
+
+#panel-2 h3 {
+  padding: 1em;
+  padding-left: 0px;
+  font-size: 32.36px;
+}
+
+#panel-2 p {
+  font-size: 16.18px;
+  width: 90%;
+}
+
+#panel-2 article {
+  padding-top: 25%;
+  width: 90%;
+  padding-left: 10%;
+  text-align: start;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
