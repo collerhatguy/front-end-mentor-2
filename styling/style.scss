@@ -28,16 +28,35 @@
 @import "./nav";
 
 // 5. panel-1
-.panel-1 {
+#panel-1 {
     background-color: white;
+    position: relative;
+    height: 1018px;
+    overflow: hidden;
     h4, h3 {
         color: $heading-text;
     }
     h3 {
         padding: 3em;
     }
+    h4 {
+        padding: 1em;
+        padding-left: 0px;
+    }
     p {
         color: $body-copy;
+        font-size: $font-size;
+    }
+    article {
+        width: 50%;
+        padding: 2em;
+        text-align: start;
+    }
+    .big-circle {
+        position: absolute;
+        opacity: .5;
+        top: 0px;
+        right: -494px;
     }
 }
 // 6. panel-2

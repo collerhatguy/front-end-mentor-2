@@ -24,6 +24,7 @@ header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
   background-image: linear-gradient(#ff8f70, #ff3d54);
   color: white;
+  border-radius: 0px 0px 0px 40px;
 }
 
 header h2 {
@@ -126,20 +127,42 @@ a {
   text-decoration: none;
 }
 
-.panel-1 {
+#panel-1 {
   background-color: white;
+  position: relative;
+  height: 1018px;
+  overflow: hidden;
 }
 
-.panel-1 h4, .panel-1 h3 {
+#panel-1 h4, #panel-1 h3 {
   color: #1f3f5b;
 }
 
-.panel-1 h3 {
+#panel-1 h3 {
   padding: 3em;
 }
 
-.panel-1 p {
+#panel-1 h4 {
+  padding: 1em;
+  padding-left: 0px;
+}
+
+#panel-1 p {
   color: #4b5862;
+  font-size: 15px;
+}
+
+#panel-1 article {
+  width: 50%;
+  padding: 2em;
+  text-align: start;
+}
+
+#panel-1 .big-circle {
+  position: absolute;
+  opacity: .5;
+  top: 0px;
+  right: -494px;
 }
 
 footer {
