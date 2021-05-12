@@ -104,4 +104,20 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+    background-color: $footer-background;
+    color: $footer-text;
+    padding: 3em;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    h3 {
+        margin: .4em;
+        padding-bottom: 10px;
+    }
+    a {
+        color: $footer-text;
+    }
 }
