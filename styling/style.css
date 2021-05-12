@@ -370,4 +370,27 @@ footer h3 {
 footer a {
   color: #c8c8cb;
 }
+
+@media only screen and (max-width: 375px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  footer h3 {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    text-decoration: underline;
+  }
+}
 /*# sourceMappingURL=style.css.map */
