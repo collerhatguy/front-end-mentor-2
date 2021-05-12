@@ -160,14 +160,14 @@ a {
 
 #panel-1 article {
   width: 50%;
-  padding: 2em;
+  padding-left: 10%;
   text-align: start;
 }
 
 #panel-1 #illustration-1 {
   position: absolute;
   top: 0px;
-  right: -494px;
+  right: -394px;
 }
 
 footer {
