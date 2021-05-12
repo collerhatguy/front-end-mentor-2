@@ -344,6 +344,7 @@ footer {
   background-color: #25252d;
   color: #c8c8cb;
   padding: 3em;
+  border-radius: 0px 100px 0px 0px;
 }
 
 footer div {
