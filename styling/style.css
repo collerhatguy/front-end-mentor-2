@@ -3,6 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -46,6 +47,15 @@ header .last {
   padding: .5em;
   color: linear-gradient(#ff8f70, #ff3d54);
   background-color: white;
+  border: white 3px solid;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+header .last:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background-image: linear-gradient(#ff8f70, #ff3d54);
+  color: white;
 }
 
 header .last-invert {
@@ -54,6 +64,13 @@ header .last-invert {
   color: white;
   background-color: linear-gradient(#ff8f70, #ff3d54);
   border: white 3px solid;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+header .last-invert:hover {
+  color: #ff3d54;
+  background-color: white;
 }
 
 nav {
@@ -63,9 +80,6 @@ nav {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 3em;
   padding-bottom: 0px;
 }
@@ -84,13 +98,15 @@ nav h3::after {
   content: "";
   position: absolute;
   right: 0px;
-  top: 9px;
+  top: 10px;
   width: 0;
   height: 0;
   border-left: 5px solid white;
   border-top: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid transparent;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 nav h3 a {
@@ -99,12 +115,20 @@ nav h3 a {
 
 nav h3:hover a {
   visibility: visible;
+  -webkit-animation: drop linear 300ms 0ms forwards;
+          animation: drop linear 300ms 0ms forwards;
+}
+
+nav h3:hover::after {
+  border-left: 5px solid transparent;
+  border-top: 5px solid white;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
 }
 
 nav a {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  padding: .2em;
+  justify-self: flex-end;
+  padding: 0 1em;
 }
 
 h3 {
@@ -125,6 +149,24 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+@-webkit-keyframes drop {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes drop {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 #panel-1 {
@@ -180,6 +222,7 @@ a {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   border-radius: 0px 0px 0px 40px;
+  overflow-y: hidden;
 }
 
 #panel-2 h3 {
