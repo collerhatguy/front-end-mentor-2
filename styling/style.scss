@@ -36,39 +36,9 @@
 
 // 6. panel-2
 @import "./panel-2";
+
 // 7. panel-3
-#panel-3 {
-    position: relative;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-flow: column wrap;
-    h4, h3 {
-        color: $heading-text;
-    }
-    h3 {
-        padding: 3em;
-        @include font-size(2);
-    }
-    h4 {
-        @include font-size(1);
-        padding: 1em;
-        padding-left: 0px;
-    }
-    p {
-        @include font-size(1);
-        color: $body-copy;
-    }
-    article {
-        width: 50%;
-        padding: 2em;
-        text-align: start;
-    }
-    img {
-        position: absolute;
-        left: -270px;
-    }
-}
+@import "./panel-3";
+
 // 8. footer
 @import "./footer";
