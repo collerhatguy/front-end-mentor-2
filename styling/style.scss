@@ -32,31 +32,42 @@
 
 // 5. panel-1
 @import "./panel-1";
+
 // 6. panel-2
-#panel-2 {
-    max-height: min-content;
-    min-height: 30vh;
-    background-image: $body-gradient;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border-radius: 0px 0px 0px 40px ;
+@import "./panel-2";
+// 7. panel-3
+#panel-3 {
+    position: relative;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: column wrap;
+    h4, h3 {
+        color: $heading-text;
+    }
     h3 {
+        padding: 3em;
+        @include font-size(2);
+    }
+    h4 {
+        @include font-size(1);
         padding: 1em;
         padding-left: 0px;
-        @include font-size(2);
     }
     p {
         @include font-size(1);
-        width: 90%;
+        color: $body-copy;
     }
     article {
-        padding-top: 25%;
-        width: 90%;
-        padding-left: 10%;
+        width: 50%;
+        padding: 2em;
         text-align: start;
     }
+    svg {
+        position: absolute;
+        left: -200px;
+    }
 }
-// 7. panel-3
 // 8. footer
 @import "./footer";
