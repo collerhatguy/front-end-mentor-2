@@ -131,6 +131,10 @@ nav a {
   padding: 0 1em;
 }
 
+.burger {
+  display: none;
+}
+
 h3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,6 +170,25 @@ a {
   }
   to {
     opacity: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  nav h3, nav a {
+    display: none;
+  }
+  nav .burger {
+    display: block;
+    right: 10px;
+    top: 10px;
+  }
+  nav .burger:focus h3, nav .burger:focus a, nav .burger:hover h3, nav .burger:hover a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
