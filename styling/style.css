@@ -132,6 +132,10 @@ a {
   position: relative;
   height: 1018px;
   overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
 }
 
 #panel-1 h4, #panel-1 h3 {
@@ -140,16 +144,18 @@ a {
 
 #panel-1 h3 {
   padding: 3em;
+  font-size: 32.36px;
 }
 
 #panel-1 h4 {
+  font-size: 16.18px;
   padding: 1em;
   padding-left: 0px;
 }
 
 #panel-1 p {
+  font-size: 16.18px;
   color: #4b5862;
-  font-size: 15px;
 }
 
 #panel-1 article {
@@ -158,9 +164,8 @@ a {
   text-align: start;
 }
 
-#panel-1 .big-circle {
+#panel-1 #illustration-1 {
   position: absolute;
-  opacity: .5;
   top: 0px;
   right: -494px;
 }

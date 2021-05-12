@@ -21,6 +21,9 @@
 @import "./variables";
 
 // 2. mixins
+@mixin font-size($num) {
+    font-size: $font-size * 1.618 * $num;
+}
 // 3. header
 @import "./header";
 
@@ -33,28 +36,31 @@
     position: relative;
     height: 1018px;
     overflow: hidden;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
     h4, h3 {
         color: $heading-text;
     }
     h3 {
         padding: 3em;
+        @include font-size(2);
     }
     h4 {
+        @include font-size(1);
         padding: 1em;
         padding-left: 0px;
     }
     p {
+        @include font-size(1);
         color: $body-copy;
-        font-size: $font-size;
     }
     article {
         width: 50%;
         padding: 2em;
         text-align: start;
     }
-    .big-circle {
+    #illustration-1 {
         position: absolute;
-        opacity: .5;
         top: 0px;
         right: -494px;
     }
