@@ -1,0 +1,28 @@
+
+//      a. colors
+$cta-text: hsl(356, 100%, 66%);
+$cta-hover-background: hsl(355, 100%, 74%);
+$heading-text: hsl(208, 49%, 24%);
+$white: hsl(0, 0%, 100%);
+$footer-text: hsl(240, 2%, 79%);
+$body-copy: hsl(207, 13%, 34%);
+$footer-background: hsl(240, 10%, 16%);
+$cta-gradient: linear-gradient(
+    hsl(13, 100%, 72%), 
+    hsl(353, 100%, 62%)
+);
+$body-gradient: linear-gradient(
+    hsl(237, 17%, 21%), 
+    hsl(237, 23%, 32%)
+);
+//      b. font-families
+@font-face {
+  font-family: Overpass;
+  src: url(https://fonts.google.com/specimen/Overpass?preview.text_type=custom);
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url(https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom);
+}
+//      c. font-sizes
+$font-size: 15px;

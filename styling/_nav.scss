@@ -1,0 +1,46 @@
+nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 3em;
+    padding-bottom: 0px;
+    h3 {
+        justify-self: flex-start;
+        width: fit-content;
+        position: relative;
+        padding: .2em;
+        padding-bottom: 0px;
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: 9px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid white;
+            border-top: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+        a {
+            visibility: hidden;
+        }
+        &:hover a {
+            visibility: visible;
+        }
+    }
+    a {
+        justify-self: end;
+        padding: .2em;
+       
+    } 
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+a {
+    text-decoration: none;
+}

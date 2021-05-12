@@ -4,8 +4,8 @@
 //      b. font-families
 //      c. font-sizes
 // 2. mixins
-// 3. nav
-// 4. header
+// 3. header
+// 4. nav
 // 5. panel-1
 // 6. panel-2
 // 7. panel-3
@@ -18,113 +18,15 @@
     box-sizing: border-box;
 }
 // 1. variables
-//      a. colors
-$cta-text: hsl(356, 100%, 66%);
-$cta-hover-background: hsl(355, 100%, 74%);
-$heading-text: hsl(208, 49%, 24%);
-$white: hsl(0, 0%, 100%);
-$footer-text: hsl(240, 2%, 79%);
-$body-copy: hsl(207, 13%, 34%);
-$footer-background: hsl(240, 10%, 16%);
-$cta-gradient: linear-gradient(
-    hsl(13, 100%, 72%), 
-    hsl(353, 100%, 62%)
-);
-$body-gradient: linear-gradient(
-    hsl(237, 17%, 21%), 
-    hsl(237, 23%, 32%)
-);
-//      b. font-families
-@font-face {
-  font-family: Overpass;
-  src: url(https://fonts.google.com/specimen/Overpass?preview.text_type=custom);
-}
-@font-face {
-  font-family: Ubuntu;
-  src: url(https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom);
-}
-//      c. font-sizes
-$font-size: 15px;
+@import "./variables";
+
 // 2. mixins
-// 3. nav
-header, nav, footer, .panel {
-    width: 100vw;
-}
-nav {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    padding: 3em;
-    padding-bottom: 0px;
-    h3 {
-        justify-self: flex-start;
-        width: fit-content;
-        position: relative;
-        padding: .2em;
-        padding-bottom: 0px;
-        &::after {
-            content: "";
-            position: absolute;
-            right: 0px;
-            top: 9px;
-            width: 0;
-            height: 0;
-            border-left: 5px solid white;
-            border-top: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-bottom: 5px solid transparent;
-        }
-        a {
-            visibility: hidden;
-        }
-        &:hover a {
-            visibility: visible;
-        }
-    }
-    a {
-        justify-self: end;
-        padding: .2em;
-       
-    } 
-}
-h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-}
-a {
-    text-decoration: none;
-}
-// 4. header
-header {
-    text-align: center;
-    background-image: $cta-gradient;
-    color: white;
-    h2 {
-        font-size: 30px;
-        padding-bottom: .4em;
-    }
-    .header-btns {
-        height: fit-content;
-        margin: 2em;
-        padding: 2em;
-        padding-bottom: 8em;
-    }
-    .last {
-        border-radius: 9900px;
-        padding: .5em;
-        color: $cta-gradient;
-        background-color: white;
-    }
-    .last-invert {
-        border-radius: 9900px;
-        padding: .5em;
-        color: white;
-        background-color: $cta-gradient;
-        border: white 3px solid;
-    }
-}
+// 3. header
+@import "./header";
+
+// 4. nav 
+@import "./nav";
+
 // 5. panel-1
 .panel-1 {
     background-color: white;
@@ -141,25 +43,4 @@ header {
 // 6. panel-2
 // 7. panel-3
 // 8. footer
-
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    background-color: $footer-background;
-    color: $footer-text;
-    padding: 3em;
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column wrap;
-    }
-    h3 {
-        margin: .4em;
-        padding-bottom: 10px;
-    }
-    a {
-        color: $footer-text;
-    }
-}
+@import "./footer";

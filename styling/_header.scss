@@ -1,0 +1,31 @@
+header, nav, footer, .panel {
+    width: 100vw;
+}
+header {
+    text-align: center;
+    background-image: $cta-gradient;
+    color: white;
+    h2 {
+        font-size: 30px;
+        padding-bottom: .4em;
+    }
+    .header-btns {
+        height: fit-content;
+        margin: 2em;
+        padding: 2em;
+        padding-bottom: 8em;
+    }
+    .last {
+        border-radius: 9900px;
+        padding: .5em;
+        color: $cta-gradient;
+        background-color: white;
+    }
+    .last-invert {
+        border-radius: 9900px;
+        padding: .5em;
+        color: white;
+        background-color: $cta-gradient;
+        border: white 3px solid;
+    }
+}
