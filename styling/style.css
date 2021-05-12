@@ -29,9 +29,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
-  background-image: linear-gradient(#ff8f70, #ff3d54);
   padding: 3em;
+  padding-bottom: 0px;
 }
 
 nav h3 {
@@ -41,6 +40,7 @@ nav h3 {
   width: fit-content;
   position: relative;
   padding: .2em;
+  padding-bottom: 0px;
 }
 
 nav h3::after {
@@ -70,13 +70,6 @@ nav a {
   padding: .2em;
 }
 
-nav .last {
-  border-radius: 9900px;
-  padding: .5em;
-  color: linear-gradient(#ff8f70, #ff3d54);
-  background-color: white;
-}
-
 h3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +88,58 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+header {
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background-image: linear-gradient(#ff8f70, #ff3d54);
+  color: white;
+}
+
+header h2 {
+  font-size: 30px;
+  padding-bottom: .4em;
+}
+
+header .header-btns {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 2em;
+  padding: 2em;
+  padding-bottom: 8em;
+}
+
+header .last {
+  border-radius: 9900px;
+  padding: .5em;
+  color: linear-gradient(#ff8f70, #ff3d54);
+  background-color: white;
+}
+
+header .last-invert {
+  border-radius: 9900px;
+  padding: .5em;
+  color: white;
+  background-color: linear-gradient(#ff8f70, #ff3d54);
+  border: white 3px solid;
+}
+
+.panel-1 {
+  background-color: white;
+}
+
+.panel-1 h4, .panel-1 h3 {
+  color: #1f3f5b;
+}
+
+.panel-1 h3 {
+  padding: 3em;
+}
+
+.panel-1 p {
+  color: #4b5862;
 }
 
 footer {

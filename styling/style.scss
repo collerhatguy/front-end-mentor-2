@@ -4,9 +4,12 @@
 //      b. font-families
 //      c. font-sizes
 // 2. mixins
-// 3. ids
-// 4. classes
-// 5. tags
+// 3. nav
+// 4. header
+// 5. panel-1
+// 6. panel-2
+// 7. panel-3
+// 8. footer
 
 // 0. settings
 * {
@@ -43,9 +46,7 @@ $body-gradient: linear-gradient(
 //      c. font-sizes
 $font-size: 15px;
 // 2. mixins
-// 3. ids
-// 4. classes
-// 5. tags
+// 3. nav
 header, nav, footer, .panel {
     width: 100vw;
 }
@@ -53,13 +54,14 @@ nav {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    background-image: $cta-gradient;
     padding: 3em;
+    padding-bottom: 0px;
     h3 {
         justify-self: flex-start;
         width: fit-content;
         position: relative;
         padding: .2em;
+        padding-bottom: 0px;
         &::after {
             content: "";
             position: absolute;
@@ -84,12 +86,6 @@ nav {
         padding: .2em;
        
     } 
-    .last {
-        border-radius: 9900px;
-        padding: .5em;
-        color: $cta-gradient;
-        background-color: white;
-    }
 }
 h3 {
     display: flex;
@@ -100,6 +96,52 @@ h3 {
 a {
     text-decoration: none;
 }
+// 4. header
+header {
+    text-align: center;
+    background-image: $cta-gradient;
+    color: white;
+    h2 {
+        font-size: 30px;
+        padding-bottom: .4em;
+    }
+    .header-btns {
+        height: fit-content;
+        margin: 2em;
+        padding: 2em;
+        padding-bottom: 8em;
+    }
+    .last {
+        border-radius: 9900px;
+        padding: .5em;
+        color: $cta-gradient;
+        background-color: white;
+    }
+    .last-invert {
+        border-radius: 9900px;
+        padding: .5em;
+        color: white;
+        background-color: $cta-gradient;
+        border: white 3px solid;
+    }
+}
+// 5. panel-1
+.panel-1 {
+    background-color: white;
+    h4, h3 {
+        color: $heading-text;
+    }
+    h3 {
+        padding: 3em;
+    }
+    p {
+        color: $body-copy;
+    }
+}
+// 6. panel-2
+// 7. panel-3
+// 8. footer
+
 footer {
     display: flex;
     justify-content: space-evenly;
