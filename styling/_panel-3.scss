@@ -14,7 +14,7 @@
         @include font-size(2);
     }
     h4 {
-        @include font-size(1);
+        @include font-size(1.5);
         padding: 1em;
         padding-left: 0px;
     }
@@ -30,5 +30,25 @@
     img {
         position: absolute;
         left: -270px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #panel-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        height: fit-content;
+        img {
+            position:static;
+            width: 110%;
+            height: 400px;
+            padding-top: .2em;
+        }
+        article { 
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 }

@@ -337,7 +337,7 @@ a {
 }
 
 #panel-3 h4 {
-  font-size: 16.18px;
+  font-size: 24.27px;
   padding: 1em;
   padding-left: 0px;
 }
@@ -356,6 +356,38 @@ a {
 #panel-3 img {
   position: absolute;
   left: -270px;
+}
+
+@media only screen and (max-width: 375px) {
+  #panel-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #panel-3 img {
+    position: static;
+    width: 110%;
+    height: 400px;
+    padding-top: .2em;
+  }
+  #panel-3 article {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 footer {
