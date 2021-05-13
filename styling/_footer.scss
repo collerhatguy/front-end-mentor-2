@@ -19,6 +19,9 @@ footer {
     }
     a {
         color: $footer-text;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 @media only screen and (max-width: 375px) {

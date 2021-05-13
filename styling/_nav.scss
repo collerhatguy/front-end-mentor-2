@@ -14,27 +14,32 @@ nav {
             position: absolute;
             right: 0px;
             top: 10px;
-            width: 0;
-            height: 0;
-            border-left: 5px solid white;
-            border-top: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-bottom: 5px solid transparent;
+            width: 10px;
+            height: 8px;
+            transform: rotateZ(180deg);
+            background-repeat: no-repeat;
+            background-image: url(../images/icon-arrow-light.svg);
             transition-duration: 300ms;
         }
 
-        a {
+        a, .nav-menu {
             visibility: hidden;
         }
         &:hover, &:focus {
             text-decoration: underline;
-            a {
+            a, .nav-menu {
                 visibility: visible;
                 animation: drop linear 300ms 0ms forwards;
             }
+            a {
+                color: $heading-text;
+                text-decoration: none;
+                &:hover {
+                    color: $footer-background;
+                }
+            }
             &::after {
-                border-left: 5px solid transparent;
-                border-top: 5px solid white;
+                transform: rotateZ(0deg);
             }
         }
     }
@@ -47,11 +52,15 @@ nav {
 .burger {
     display: none;
 }
-h3 {
+.nav-menu {
+    margin-top: .6em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    background-color: white;
+    padding: .4em;
+    border-radius: 4px;
 }
 a {
     text-decoration: none;

@@ -95,17 +95,17 @@ nav h3::after {
   position: absolute;
   right: 0px;
   top: 10px;
-  width: 0;
-  height: 0;
-  border-left: 5px solid white;
-  border-top: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
+  width: 10px;
+  height: 8px;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  background-repeat: no-repeat;
+  background-image: url(../images/icon-arrow-light.svg);
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
 }
 
-nav h3 a {
+nav h3 a, nav h3 .nav-menu {
   visibility: hidden;
 }
 
@@ -113,15 +113,24 @@ nav h3:hover, nav h3:focus {
   text-decoration: underline;
 }
 
-nav h3:hover a, nav h3:focus a {
+nav h3:hover a, nav h3:hover .nav-menu, nav h3:focus a, nav h3:focus .nav-menu {
   visibility: visible;
   -webkit-animation: drop linear 300ms 0ms forwards;
           animation: drop linear 300ms 0ms forwards;
 }
 
+nav h3:hover a, nav h3:focus a {
+  color: #1f3f5b;
+  text-decoration: none;
+}
+
+nav h3:hover a:hover, nav h3:focus a:hover {
+  color: #25252d;
+}
+
 nav h3:hover::after, nav h3:focus::after {
-  border-left: 5px solid transparent;
-  border-top: 5px solid white;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
 }
 
 nav a {
@@ -133,7 +142,8 @@ nav a {
   display: none;
 }
 
-h3 {
+.nav-menu {
+  margin-top: .6em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,6 +157,9 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+  background-color: white;
+  padding: .4em;
+  border-radius: 4px;
 }
 
 a {
@@ -429,6 +442,10 @@ footer h3 {
 
 footer a {
   color: #c8c8cb;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 375px) {
