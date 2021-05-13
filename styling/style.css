@@ -16,10 +16,6 @@
   src: url(https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom);
 }
 
-header, nav, footer, .panel {
-  width: 100vw;
-}
-
 header {
   text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
@@ -113,17 +109,19 @@ nav h3 a {
   visibility: hidden;
 }
 
-nav h3:hover a {
+nav h3:hover, nav h3:focus {
+  text-decoration: underline;
+}
+
+nav h3:hover a, nav h3:focus a {
   visibility: visible;
   -webkit-animation: drop linear 300ms 0ms forwards;
           animation: drop linear 300ms 0ms forwards;
 }
 
-nav h3:hover::after {
+nav h3:hover::after, nav h3:focus::after {
   border-left: 5px solid transparent;
   border-top: 5px solid white;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
 }
 
 nav a {
@@ -208,12 +206,12 @@ a {
 }
 
 #panel-1 h3 {
-  padding: 3em;
   font-size: 32.36px;
+  padding: 3em;
 }
 
 #panel-1 h4 {
-  font-size: 16.18px;
+  font-size: 24.27px;
   padding: 1em;
   padding-left: 0px;
 }
@@ -229,27 +227,30 @@ a {
   text-align: start;
 }
 
-#panel-1 #illustration-1 {
+#panel-1 img {
   position: absolute;
   top: 0px;
   right: -294px;
-  width: 100vh;
-  height: 100vh;
 }
 
 @media only screen and (max-width: 375px) {
   #panel-1 {
-    height: 2000px;
-    -ms-grid-rows: 300px 1fr 300px 300px;
-        grid-template-rows: 300px 1fr 300px 300px;
+    -ms-grid-rows: 200px 1fr 300px 300px;
+        grid-template-rows: 200px 1fr 300px 300px;
+    height: 200vh;
   }
-  #panel-1 #illustration-1 {
-    display: block;
+  #panel-1 img {
+    position: relative;
     width: 100%;
+    right: 0%;
+    margin: 0 auto;
     height: 400px;
+    src: local("images/illustration-editor-mobile.svg");
   }
   #panel-1 article {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -395,5 +396,9 @@ footer a {
     padding-bottom: 0px;
     text-decoration: underline;
   }
+}
+
+header, nav, footer, .panel {
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */

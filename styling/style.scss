@@ -42,3 +42,7 @@
 
 // 8. footer
 @import "./footer";
+
+header, nav, footer, .panel {
+    width: 100vw;
+}

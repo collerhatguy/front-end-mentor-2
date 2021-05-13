@@ -26,7 +26,8 @@ nav {
         a {
             visibility: hidden;
         }
-        &:hover {
+        &:hover, &:focus {
+            text-decoration: underline;
             a {
                 visibility: visible;
                 animation: drop linear 300ms 0ms forwards;
@@ -34,8 +35,6 @@ nav {
             &::after {
                 border-left: 5px solid transparent;
                 border-top: 5px solid white;
-                border-right: 5px solid transparent;
-                border-bottom: 5px solid transparent;
             }
         }
     }
