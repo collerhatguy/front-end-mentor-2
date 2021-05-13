@@ -275,14 +275,38 @@ a {
 
 #panel-2 p {
   font-size: 16.18px;
-  width: 90%;
 }
 
 #panel-2 article {
   padding-top: 25%;
   width: 90%;
-  padding-left: 10%;
+  margin: 0 auto;
   text-align: start;
+}
+
+@media only screen and (max-width: 375px) {
+  #panel-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80vh;
+    position: relative;
+  }
+  #panel-2 img {
+    width: 100%;
+    position: absolute;
+    top: -200px;
+  }
+  #panel-2 article {
+    text-align: center;
+    position: absolute;
+  }
 }
 
 #panel-3 {
