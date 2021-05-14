@@ -81,7 +81,9 @@ a {
             &:focus, &:hover {
                 h3, a {
                     display: flex;
-                    align-items: baseline;
+                    justify-content: center;
+                    align-items: center;
+                    flex-flow: column wrap;
                 }
             }
         }
