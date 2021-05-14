@@ -4,16 +4,10 @@ header {
     background-image: $cta-gradient;
     color: white;
     border-radius: 0px 0px 0px 40px;
-    z-index: -2;
-    &::after {
-        background-image: url(../images/bg-pattern-intro.svg);
+    #logo {
         position: absolute;
-        width: 1400px;
-        margin-left: -50%;
-        margin-top: -310px;
-        object-fit: cover;
-        object-position: -50% 0;
-        overflow: hidden;
+        top: 40px;
+        left: 80px;
     }
     h2 {
         font-size: 30px;
@@ -47,6 +41,13 @@ header {
         &:hover {
             color: hsl(353, 100%, 62%);
             background-color: white;
+        }
+    }
+}
+@media only screen and (max-width: 375px) {
+    header {
+        h2 {
+            margin-top: 80px;
         }
     }
 }
