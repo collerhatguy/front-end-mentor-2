@@ -22,12 +22,20 @@ header {
   background-image: linear-gradient(#ff8f70, #ff3d54);
   color: white;
   border-radius: 0px 0px 0px 40px;
+  z-index: -2;
 }
 
-header #logo {
+header::after {
+  background-image: url(../images/bg-pattern-intro.svg);
   position: absolute;
-  top: 40px;
-  left: 80px;
+  width: 1400px;
+  margin-left: -50%;
+  margin-top: -310px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -50% 0;
+     object-position: -50% 0;
+  overflow: hidden;
 }
 
 header h2 {
@@ -73,12 +81,6 @@ header .last-invert {
 header .last-invert:hover {
   color: #ff3d54;
   background-color: white;
-}
-
-@media only screen and (max-width: 375px) {
-  header h2 {
-    margin-top: 80px;
-  }
 }
 
 nav {
@@ -225,12 +227,8 @@ a {
   }
   nav .burger {
     display: block;
-    position: absolute;
-    right: 40px;
-    top: 60px;
-  }
-  nav .burger:focus, nav .burger:hover {
-    margin-bottom: 100px;
+    right: 10px;
+    top: 10px;
   }
   nav .burger:focus h3, nav .burger:focus a, nav .burger:hover h3, nav .burger:hover a {
     display: -webkit-box;

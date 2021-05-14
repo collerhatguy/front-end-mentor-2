@@ -82,14 +82,12 @@ a {
         }
         .burger {
             display: block;
-            position: absolute;
-            right: 40px;
-            top: 60px;
+            right: 10px;
+            top: 10px;
             &:focus, &:hover {
                 h3, a {
                     display: flex;
                 }
-                margin-bottom: 100px;
             }
         }
     }
