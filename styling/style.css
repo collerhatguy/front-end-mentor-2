@@ -22,6 +22,20 @@ header {
   background-image: linear-gradient(#ff8f70, #ff3d54);
   color: white;
   border-radius: 0px 0px 0px 40px;
+  z-index: -2;
+}
+
+header::after {
+  background-image: url(../images/bg-pattern-intro.svg);
+  position: absolute;
+  width: 1400px;
+  margin-left: -50%;
+  margin-top: -310px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -50% 0;
+     object-position: -50% 0;
+  overflow: hidden;
 }
 
 header h2 {

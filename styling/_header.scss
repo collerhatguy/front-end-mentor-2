@@ -3,7 +3,18 @@ header {
     text-align: center;
     background-image: $cta-gradient;
     color: white;
-    border-radius: 0px 0px 0px 40px ;
+    border-radius: 0px 0px 0px 40px;
+    z-index: -2;
+    &::after {
+        background-image: url(../images/bg-pattern-intro.svg);
+        position: absolute;
+        width: 1400px;
+        margin-left: -50%;
+        margin-top: -310px;
+        object-fit: cover;
+        object-position: -50% 0;
+        overflow: hidden;
+    }
     h2 {
         font-size: 30px;
         padding-bottom: .4em;
