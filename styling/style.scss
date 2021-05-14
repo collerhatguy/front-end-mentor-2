@@ -18,6 +18,10 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+}
 // 1. variables
 @import "./variables";
 

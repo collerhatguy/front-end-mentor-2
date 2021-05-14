@@ -15,14 +15,5 @@ $body-gradient: linear-gradient(
     hsl(237, 17%, 21%), 
     hsl(237, 23%, 32%)
 );
-//      b. font-families
-@font-face {
-  font-family: Overpass;
-  src: url(https://fonts.google.com/specimen/Overpass?preview.text_type=custom);
-}
-@font-face {
-  font-family: Ubuntu;
-  src: url(https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom);
-}
 //      c. font-sizes
 $font-size: 10px;
