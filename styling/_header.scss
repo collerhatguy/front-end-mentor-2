@@ -13,22 +13,30 @@ header {
         margin-top: -310px;
         object-fit: cover;
         object-position: -50% 0;
-        overflow: hidden;
     }
     h2 {
-        font-size: 30px;
-        padding-bottom: .4em;
+        font-size: 3rem;
+        padding-bottom: .4rem;
+    }
+    .header-top-section {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .logo {
+        width: 11%;
     }
     .header-btns {
-        height: fit-content;
-        margin: 2em;
-        padding: 2em;
-        padding-bottom: 8em;
+        margin: 2rem;
+        padding: 2rem;
+        padding-bottom: 8rem;
         font-family: 'Ubuntu', sans-serif;
     }
     .last {
         border-radius: 9900px;
-        padding: .5em;
+        padding: .5rem;
         color: $cta-gradient;
         background-color: white;
         border: white 3px solid;
@@ -40,7 +48,7 @@ header {
     }
     .last-invert {
         border-radius: 9900px;
-        padding: .5em;
+        padding: .5rem;
         color: white;
         background-color: $cta-gradient;
         border: white 3px solid;
