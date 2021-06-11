@@ -374,7 +374,7 @@ a {
 }
 
 #panel-2 h3 {
-  padding: 1em;
+  padding: 1rem;
   padding-left: 0px;
   font-size: 3.236rem;
 }
@@ -438,13 +438,13 @@ a {
 }
 
 #panel-3 h3 {
-  padding: 3em;
+  padding: 3rem;
   font-size: 3.236rem;
 }
 
 #panel-3 h4 {
   font-size: 2.427rem;
-  padding: 1em;
+  padding: 1rem;
   padding-left: 0px;
 }
 
@@ -455,7 +455,7 @@ a {
 
 #panel-3 article {
   width: 50%;
-  padding: 2em;
+  padding: 2rem;
   text-align: start;
 }
 
@@ -508,7 +508,7 @@ footer {
           align-items: baseline;
   background-color: #25252d;
   color: #c8c8cb;
-  padding: 3em;
+  padding: 3rem;
   border-radius: 0px 100px 0px 0px;
 }
 
@@ -529,7 +529,7 @@ footer div {
 }
 
 footer h3 {
-  margin: .4em;
+  margin: .4rem;
   padding-bottom: 10px;
 }
 
@@ -558,7 +558,7 @@ footer a:hover {
             flex-flow: column wrap;
   }
   footer h3 {
-    padding-top: 15px;
+    padding-top: 1.5rem;
     padding-bottom: 0px;
     text-decoration: underline;
   }

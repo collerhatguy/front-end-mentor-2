@@ -5,7 +5,7 @@ footer {
     align-items: baseline;
     background-color: $footer-background;
     color: $footer-text;
-    padding: 3em;
+    padding: 3rem;
     border-radius: 0px 100px 0px 0px;
     div {
         display: flex;
@@ -14,7 +14,7 @@ footer {
         flex-flow: column wrap;
     }
     h3 {
-        margin: .4em;
+        margin: .4rem;
         padding-bottom: 10px;
     }
     a {
@@ -31,7 +31,7 @@ footer {
         align-items: center;
         flex-flow: column wrap;
         h3 {
-            padding-top: 15px;
+            padding-top: 1.5rem;
             padding-bottom: 0px;
             text-decoration: underline;
         }
